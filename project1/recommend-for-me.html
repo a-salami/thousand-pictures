@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Recommendation for Me | In the Eye of a Thousand Pictures</title>
+        <link rel = "stylesheet" href = "../cssJS/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "../cssJS/thousandPictures.css"/>
+        <script src = "../cssJS/functions.js"></script>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src = "https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        
+        <script type = "text/javascript">
+          document.addEventListener("click", websiteCheck, false)
+            $( function() {
+                var availableTags = [
+                "@gmail.com",
+                "@hotmail.com",
+                "@outlook.com",
+                "@yahoo.com",
+                ];
+
+                $( "#email" ).autocomplete({
+                source: availableTags
+                });
+            } );
+
+        </script>
+    </head>
+    <body>
+        
+        <div class = "container">
+            <!-- Header, Navigation -->
+            <div class = "row">
+                <div class = "pageHeader" id = "top"></div>
+                <div class = "navbar" id = "nav"></div>
+                <script>
+                    setHeader("top"); //sets element with id "top" with the page header html
+                    setNavbar("nav");//sets element with id "nav" with the navigation html 
+                </script>
+            </div>
+
+            <!-- "Body" -->
+            <div class = "row beige">
+                <!-- Page Welcome -->
+              <div class = "col-sm-12">
+                <h3>-RECOMMENDATION FOR ME-</h3>
+                
+                <!-- Form for recommendation collection -->
+                <form id = "form1" method = "post">
+                    <!-- About You fieldset -->
+                    <fieldset>
+                        <legend>About You</legend><br>
+                        Name:<br>
+                        <input name = "userName" class = "inputText" type = "text"><br><br>
+                        
+                        Gamertag:<br>
+                        <input name = "gamertag" class = "inputText" type = "text" title = "a.k.a. your screenname or username"><br><br>
+                        
+                        Email:<br>
+                        <input id = "email" name = "email" type = "email"><br><br>
+                        
+                        How long have you been playing video games? <br>
+                        <textarea id = "date" rows = 2 cols = "30"></textarea><br><br>
+                        
+                        What's your favorite way to play video games? <br>
+                        <textarea rows = 3 cols = "30" placeholder = "With friends, competitively, on PC, etc."></textarea>
+                    </fieldset>
+
+                    <!-- About Your Game fieldset -->
+                    <fieldset>
+                        <legend>About Your Game</legend><br>
+                        Game Name:*<br>
+                        <input name = "gameName" class = "inputText" type = "text"><br><br>
+                        
+                        Game Description:<br>
+                        <textarea name = "desc" rows = 3 cols = "30"></textarea><br><br>
+
+                        Genre(s) (cntrl + click to select all that apply):* <br>
+                        <select name = "genre" id = "genre" width = "400px" multiple>
+                            <option value = "action">Action</option>
+                            <option value = "adventure">Adventure</option>
+                            <option value = "actionAdventure">Action-Adventure</option>
+                            <option value = "openWorld">Open-World</option>
+                            <option value = "puzzle">Puzzle</option>
+                            <option value = "rpg">Role-Playing</option>
+                            <option value = "simulation">Simulation</option>
+                            <option value = "strategy">Strategy</option>
+                            <option value = "sports">Sports</option>
+                        </select>
+                        <br><br>
+
+                        Around what time did you start playing this game?<br>
+                        <input type = "date" id = "gameStart" name = "gameStart">
+                    </fieldset>
+
+                    <!-- Game Logistics fieldset -->
+                    <fieldset id = "logistics">
+                        <legend id = "test"> Game Logistics</legend><br>
+
+                        Is it important to buy this game brand-new?<br>
+                        <input type = "radio" id = "newYes" name = "newYes" value = "yes">
+                        <label for = "newYes">Yes</label>
+
+                        <input type = "radio" id = "newNo" name = "newNo" value = "no">
+                        <label for = "newNo">No</label><br><br>
+
+                        Is this game part of a series?<br>
+                        <input type = "radio" id = "seriesYes" name = "seriesYes" value = "yes">
+                        <label for = "seriesYes">Yes</label>
+
+                        <input type = "radio" id = "seriesNo" name = "seriesNo" value = "no">
+                        <label for = "seriesNo">No</label><br><br>
+
+                        Is this one of your favorite games?<br>
+                        <input type = "radio" id = "favYes" name = "favYes" value = "yes">
+                        <label for = "favYes">Yes</label>
+
+                        <input type = "radio" id = "favNo" name = "favNo" value = "no">
+                        <label for = "favNo">No</label><br><br>
+
+                        Where I can get this game (select all that apply)?: <br>
+                        <input type = "checkbox" name = "checkboxes" id = "developerWebsite" value = "developerWebsite"> Developer's Website<br>
+                        <input type = "checkbox" name = "checkboxes" id = "epicGames" value = "epicGames"> Epic Games Store<br>
+                        <input type = "checkbox" name = "checkboxes" id = "eShop" value = "eShop"> Nintendo eShop<br>
+                        <input type = "checkbox" name = "checkboxes" id = "physical" value = "physical"> Physical Store<br>
+                        <input type = "checkbox" name = "checkboxes" id = "steam" value = "steam"> Steam<br><br>
+
+                        <div id = "devSite" class = 'devSite'>
+                          What's the link for the developer's website?<br>
+                          <textarea rows = '2' cols = '30'></textarea><br><br>
+                        </div>
+
+                        
+                        <input type = "submit" value =" Submit">
+
+                        
+                    </fieldset>
+                </form>
+
+                <script> //jquery form validation
+                    $("#form1").validate({
+                      //defining validation features
+                      rules:{
+                        email: {
+                          email: true
+                        },
+
+                        gameName: {
+                          required: true,
+                        },
+
+                        desc: {
+                            required: true
+                        },
+
+                        genre: {
+                            required: true
+                        }
+                      },
+                
+                      //defining catch messages if a specific validation check fails
+                      messages: {
+                        email: {
+                          email: "<i>&nbsp;Please check email formatting.</i>"
+                        },
+
+                        gameName: {
+                          required: "<i>&nbsp;Please enter a game name.</i>",
+                        },
+
+                        desc: {
+                            required: "<i><br>&nbsp;Tell me about this game..</i>"
+                        },
+
+                        genre: {
+                            required: "<i><br>&nbsp;Provide at least one genre.</i>"
+                        }
+                      }
+                    });
+                  </script>
+
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class = "row pageFooter" id = "footer">
+                <script>
+                  setFooter("footer");
+                </script>
+            </div>
+          </div>
+    </body>
+</html>

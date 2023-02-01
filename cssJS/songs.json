@@ -1,0 +1,258 @@
+{
+	"songs": {
+		"song": [
+			{
+				"songName": "Adventure III (Symphonic)",
+                "gameName": "Dragon Quest XI",
+				"desc": "Declarative and majestic, this song waits for no one to begin the adventure.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Battlerock",
+                "gameName": "Super Mario Galaxy",
+				"desc": "A somber battlecry, this song makes warriors remember what - or who - they're fighting for.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Bit Crusher",
+                "gameName": "Tekken 4",
+				"desc": "This song exudes both funk and jazz, taking the best elements of both genres to make a memorable song that you can't sit still listening to.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Civilization in the Sky",
+                "gameName": "The Messenger",
+				"desc": "This song bleeds adventure has has a heart for danger and excitement. It's the perfect background for exploring the ruins of a lost civilization.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Collector",
+                "gameName": "Dead Cells",
+				"desc": "The cello being the leading instrument on this piece was a phenomenal way to bring out the emotion. It provides a sense of power and of loneliness.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Cosmic Cove Galaxy",
+                "gameName": "Super Mario Galaxy 2",
+				"desc": "This piece is enlightened, it's magical, ethereal, otherworldly. This entire soundtrack is phenomenal. Please <a target = '_blank' href = 'https://www.youtube.com/playlist?list=PLC583980D7806298E'>go listen to it</a>.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Crossover",
+                "gameName": "Persona5 Scramble: The Phantom Strikers",
+				"desc": "The definition of funky, the bassline in this song alone is enough to make it impossible to sit still.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Dalarna",
+                "gameName": "Minecraft Dungeons",
+				"desc": "Relaxed and calming, it's the perfect piece to play when you've come back to camp after a long dungeon crawl.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Delfino Square",
+                "gameName": "Mario Kart DS",
+				"desc": "This is a song to play when children run through tight streets and around careful streetcorners, adults watching as they jaunt about.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Dragon Roost Island",
+                "gameName": "The Legend of Zelda: Wind Waker",
+				"desc": "A joyful, jaunty tune, perfect for sailing the cerulean seas.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Ground Theme - Super Mario Bros. 2 [Remix]",
+                "gameName": "Super Smash Bros. Ultimate",
+				"desc": "A perfect song for swing dance, it's the perfect thing to listen to for a purely exciting tune.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Fall (Ghost Synth)",
+                "gameName": "Stardew Valley",
+				"desc": "This song, while slightly lonely, cheers you up. Perfect for a crisp fall afternoon.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Fall (Raven's Descent)",
+                "gameName": "Stardew Valley",
+				"desc": "Truly like a raven in flight, this song rides the ups and downs of its wide melody, infused with seasonal ambient sounds for the full fall effect.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Forgotten (Forlorn Temple)",
+                "gameName": "The Messenger",
+				"desc": "Melancholy and regretful, this song is a rough shove into an emotional, darker mood.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Ice",
+                "gameName": "Terraria",
+				"desc": "The perfect song to wash over a chilly atmosphere. Watch your step!",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Main Theme: Super Smash Bros. 4",
+                "gameName": "Super Smash Bros. for Nintendo 3DS and WiiU",
+				"desc": "A battle cry through and through, enough to rile the spirit of any young warrior looking to prove himself.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Menu 2",
+                "gameName": "Super Smash Bros. Melee",
+				"desc": "This is one of my favorite video game songs ever created. It's regal, playful, evocative... and it's just menu music. For whatever reason, video game menu music is incredible.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Metro Kingdom - New Donk City: Daytime",
+                "gameName": "Super Mario Odyssey",
+				"desc": "Joyful and jazzy, this song is perfect for a listen while strolling through the big city.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Rainbow Road",
+                "gameName": "Mario Kart DS",
+				"desc": "The perfect song for racing little carts on a road made of rainbows and star matter in space. This piece is absolutely out of the world.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Ranch Theme",
+                "gameName": "Slime Rancher",
+				"desc": "Idyllic and peacful, this song embodies the peaceful farming genre from which it comes.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Rito Village (Day)",
+                "gameName": "The Legend of Zelda: Breath of the Wild",
+				"desc": "Ambient and peaceful, this song accompanies days of cloudless skies and beautiful weather.",
+				"youtubeID": "youtubeID"
+			},
+
+
+			{
+				"songName": "Rude Buster",
+                "gameName": "Deltarune",
+				"desc": "Punchy and upbeat, it's the perfect song for a battle.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Scarlet Forest",
+                "gameName": "Deltarune",
+				"desc": "This tune is relaxed and evocative, pulling long notes through the body of the piece to create a sense of majesty.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Sea Breeze IV",
+                "gameName": "Dragon Quest XI",
+				"desc": "The perfect piece for a jaunt out on the sea, this fanciful music ebbs and flows like the waves of the great ocean.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Single-Player Menu",
+                "gameName": "Mario Kart DS",
+				"desc": "For whatever reason, this menu music has an incredible beat and is ridiculously catchy. One of my all-time favorites.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Spring (Wild Horseradish)",
+                "gameName": "Stardew Valley",
+				"desc": "Taking you through a sweet-smelling field of spring grass, this song accents the perfect spring day; rain on the horizon, but held off long enough for you to bask in the new sunshine.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Studiopolis Zone Act 1 (Lights, Camera, Action!)",
+                "gameName": "Sonic Mania",
+				"desc": "This song is energetic and performative, perfect for a roller rink or a spontaneous dance break.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Summer (Nature's Crescendo)",
+                "gameName": "Stardew Valley",
+				"desc": "This song embodies the freedom of bright summer days long lost to time.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Summer (Tropicala)",
+                "gameName": "Stardew Valley",
+				"desc": "Beautifully excited, this song is like a child set loose on a calm beach in the summertime.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Taswell",
+                "gameName": "Minecraft",
+				"desc": "The music captures both wistful loneliness and the hope of a new day, weaving them together in a beautiful song.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Temple",
+                "gameName": "Super Smash Bros. Brawl",
+				"desc": "Evocative and mysterious, this song makes you wonder what could be around the next corner of your destined journey.",
+				"youtubeID": "-51ZvV6ISD4"
+			},
+
+			{
+				"songName": "Tiger! Tiger!",
+                "gameName": "Super Smash Bros. Ultimate",
+				"desc": "Plucky, upbeat, and powerful, this song is a bucket of fun.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Waluigi Pinball/Wario Stadium",
+                "gameName": "Mario Kart DS",
+				"desc": "This song is unbelivably funky with its heavy lean into synth. The entire soundtrack from this game is incredible and you should<a target = '_blank' href = 'https://www.youtube.com/playlist?list=PLV8YnLyeUO1cng0dftZXQkwyY_DkJ8Xcj'> go listen to it</a>, but this is one of the best.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Winter (Ancient)",
+                "gameName": "Stardew Valley",
+				"desc": "This song will make you long for a memory that hardly exists anymore, lost in the back of your childhood memories.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Winter (Nocturne)",
+                "gameName": "Stardew Valley",
+				"desc": "Melancholy incarnate, this song reaches for something inside you that you don't know is there, bringing it to the light with full emotion.",
+				"youtubeID": "youtubeID"
+			},
+
+			{
+				"songName": "Winter (The Wind Can Be Still)",
+                "gameName": "Stardew Valley",
+				"desc": "Wistful, happy heartache floods this piece. It's beautifully melodramatic, perfect for a winter day with air so sharp it'll slice at your lungs on the way in.",
+				"youtubeID": "youtubeID"
+			}
+		]
+	}
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Home | In the Eye of a Thousand Pictures</title>
+        <link rel = "stylesheet" href = "cssJS/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "cssJS/thousandPictures.css"/>
+        <script src = "cssJS/functions.js"></script>
+        
+        <script type = "text/javascript">
+          function start(){ //sends a text file to newLang()
+            document.getElementById("welcome").addEventListener("click", function() {
+              welcome("cssJS/welcome.txt"); //text file of different translations of 'welcome'
+            }, false);
+          }
+
+          request = new XMLHttpRequest(); //creates an ajax request
+          function welcome(url){ //fetches file information from lang.txt
+            if(request){
+              request.addEventListener("readystatechange", stateChange, false);
+              request.open("GET", url, true); //gets the information via request
+              request.send(null);
+            }
+          }
+        
+          function stateChange(){
+            if (request.readyState == 4 & request.status == 200){ //if the request is valid
+              responses = request.responseText.split("\n"); //take the \n separated text file and parse it into an array
+
+              for (a in responses){ //iterating through responses
+                responses[a] = responses[a].split(", "); //splitting the line information into the translation of the word 'welcome' and its language
+              }
+
+              index = Math.floor(Math.random() * responses.length); //choosing a random index from responses
+              document.getElementById("welcome").innerHTML = "-" + responses[index][0] + "-"; //displaying one of the translations of 'welcome' from responses[index]
+              document.getElementById("translation").innerHTML = responses[index][1]; //displaying the translation language of 'welcome' from responses[index]
+            }
+          }
+        
+          window.addEventListener("load", start, false);
+        </script>
+    </head>
+    <body>  
+        <div class = "container">
+            <!-- Header, Navigation -->
+            <div class = "row">
+                <div class = "pageHeader" id = "top"></div>
+                <div class = "navbar" id = "nav"></div>
+                <script>
+                    setHeader("top"); //sets element with id "top" with the page header html
+                    setNavbar("nav");//sets element with id "nav" with the navigation html 
+                </script>
+            </div>
+
+            <!-- "Body" -->
+            <div class = "row beige">
+              <!-- WELCOME -->
+              <div class = "col-sm-4">
+                <h3 id = "welcome" class = "clickHover">-WELCOME-</h3>
+                <h5 id = "translation" class = "translation">English</h5>
+                <p>"A picture's worth a thousand words". How much are moving pictures worth?</p>
+                <p>I started playing video games when I was five years old, and they mean the world to me. Because of them, I've connected with my family members and friends, made new friends, and met people I'll cherish for the rest of my life.</p>
+                <p>To some, video games are boring, considered a waste of time, or just something they aren't interested in. To me, they're just as much a way of life as reading and writing, two of my other hobbies. Video games tell poignant stories (or maybe silly ones) and let you interact with the imaginary worlds only the most creative of folks can come up with.</p>
+                <p>Having spent the last 15 years of my life gaming, I want to share that now. This place serves as a catalogue of some of the games I've played, a place for me to recommend (or warn you away from) games, or for me to just talk about them.</p>
+                <p>I do hope you enjoy the time you spend here. Cheers!</p>
+              </div>
+
+              <!-- WHERE -->
+              <div class = "col-sm-4">
+                <h3>-WHERE-</h3>        
+                <p>Where you want to go depends solely on what you want to find.</p>
+                <p>Want to learn more about video game basics? <a href = "project1/genres.html">Start here</a>.</p>
+                <p>If you're looking for a new (or, perhaps, an old) game to play and don't know where to begin, <a href = "project1/recommend-for-you.html">this</a> should help you get started.</p>
+                <p>If you're an avid player and want to recommend a game to <i>me</i> instead, or perhaps you've got a favorite you want to share, you'll want to <a href = "project1/recommend-for-me.html">check this out</a> and send me a game to play.</p>
+                <p>If you want to look at in-game screenshots from an array of different games, look no further than <a href = "project2/gallery.html">here</a>.</p>
+                <p>Are you into music? Would you like some more recommendations? If either is true, <a href = "project3/vgm.html">check this page out</a>.</p>
+                <p>And finally, if you want to know where I got all of these beautiful pictures, check out <a href = "project1/reference.html">this list</a> I've compiled for this exact purpose.</p>
+              </div>
+            
+              <!-- WHAT -->
+              <div class = "col-sm-4">
+                <h3>-WHAT-</h3>        
+                <p>am I playing right now? Great question.</p>
+                <p>Pixel Sprout Studios' <b>Sun Haven</b>.</p>
+                <img src = "images/shHoneyGarden.jpg" alt = "A screenshot of the game 'Civilization VI'">
+                <p class = "imgCaption">A screenshot of a honey garden in Sun Haven</p>
+
+                <p>I'm also replaying Re-Logic's <b>Terraria</b>.</p>
+                <img src = "images/tmaShroomBase.png" alt = "A screenshot of the game 'Terraria'">
+                <p class = "imgCaption">A screenshot of a mushroom biome in Terraria</p>
+              </div>
+            </div>
+
+            <!-- Footer -->
+              <div class = "row pageFooter" id = "footer">
+                <script>
+                  setFooter("footer");
+                </script>
+              </div>
+          </div>
+    </body>
+</html>

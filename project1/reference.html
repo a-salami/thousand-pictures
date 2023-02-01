@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> References | In the Eye of a Thousand Pictures</title>
+        <link rel = "stylesheet" href = "../cssJS/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "../cssJS/thousandPictures.css"/>
+        <script src = "../cssJS/functions.js"></script>
+    </head>
+    <body>
+        
+        <div class = "container">
+            <!-- Header, Navigation -->
+            <div class = "row">
+                <div class = "pageHeader" id = "top"></div>
+                <div class = "navbar" id = "nav"></div>
+                <script>
+                    setHeader("top"); //sets element with id "top" with the page header html
+                    setNavbar("nav");//sets element with id "nav" with the navigation html 
+                </script>
+            </div>
+
+            <!-- "Body" -->
+            <div class = "row beige">
+                <!-- Image Links -->
+                <div class = "col-sm-6" id = "images">
+                    <h3>-IMAGES-</h3>
+                    <script>
+                        //heading, link, link text
+                        images = [
+                            ["Fairy Bullet Marker", "https://zelda.fandom.com/wiki/Fairy", "https://zelda.fandom.com/wiki/Fairy"],
+                            ["Dragon Quest 3 HD-2D Remake Style Reference", "https://www.inverse.com/gaming/dragon-quest-3-hd-2d-remake-release-date-trailer-consoles", "https://www.inverse.com/gaming/dragon-quest-3..."],
+                            ["Dragon Quest 12 Title Art", "https://www.laptopmag.com/news/dragon-quest-12-the-flames-of-fate", "https://www.laptopmag.com/news/dragon-quest-12..."],
+                            ["In-Progress screenshots of Haunted Chocolatier", "https://www.hauntedchocolatier.net/media/", "https://www.hauntedchocolatier.net/media/"],
+                            ["Release art for The Legend of Zelda: Tears of the Kingdom", "https://gameranx.com/updates/id/364350/article/the-legend-of-zelda-tears-of-the-kingdom-gets-clarified-by-nintendo/", "https://gameranx.com/updates/id/364350/article..."],
+                            ["Screenshot of The Messenger", "https://www.rockpapershotgun.com/the-messenger-release-date-trailer", "https://www.rockpapershotgun.com/the-messenger..."],
+                            ["Screenshot of Sid Meier's Civilization VI", "https://www.pcgamesn.com/civilization-vi/civilization-vi-gathering-storm", "https://www.pcgamesn.com/civilization-vi/..."],
+                            ["Screenshot of Streets of Rage 4", "https://www.thegamer.com/streets-of-rage-4-the-story-so-far/", "https://www.thegamer.com/streets-of-rage-4..."],
+                            ["Screenshot of Sun Haven", "https://gamefabrique.com/games/sun-haven/", "https://gamefabrique.com/games/sun-haven/"],
+                            ["Screenshot of Super Smash Bros. Ultimate", "https://www.nintendolife.com/news/2018/11/smash_bros_ultimate_just_got_a_whole_lot_deeper_thanks_to_the_spirit_system", "https://www.nintendolife.com/news/2018/11/smash_bros..."],
+                            ["Video Game Genre Multi-Venn-Diagram", "https://www.resetera.com/threads/select-a-genre-celebrate-how-diverse-and-broad-that-genre-is.13089/", "https://www.resetera.com/threads/select-a-genre..."],
+                        ];
+
+                        setReferences("images", images);
+                    </script>
+
+                    <p>All pictures on <a href = "../project2/gallery.html">this gallery page</a> and <a href = "recommend-for-you.html">this recommendations page</a> under the 'Legend of Zelda: Breath of the Wild', 'Animal Crossing: New Horizons', and 'Stardew Valley' sections were captured by me in the respective games</p>
+                </div>
+
+                <!-- Reference Page Links -->
+                <div class = "col-sm-6" id = "references">
+                    <h3>-REFERENCES-</h3>
+                    <script>
+                        //heading, link, link text
+                        references = [
+                            ["List of Video Game Genres and Subgenres", "https://en.wikipedia.org/wiki/List_of_video_game_genres", "https://en.wikipedia.org/wiki/List_of_video_game_genres"],
+                            ["Nintendo's Official YouTube Channel", "https://www.youtube.com/c/nintendo", "https://www.youtube.com/c/nintendo"],
+                            ["Trailer 1 for The Legend of Zelda: Tears of the Kingdom", "https://www.youtube.com/watch?v=Pi-MRZBP91I&list=PLBJvm1RIFSc5XJ6KnlvqGSGBJJx6IWmNx&index=19", "https://www.youtube.com/watch..."]
+                        ];
+
+                        setReferences("references", references);
+                    </script>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class = "row pageFooter" id = "footer">
+                <script>
+                  setFooter("footer");
+                </script>
+              </div>
+        </div>
+    </body>
+</html>

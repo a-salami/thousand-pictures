@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Where to Begin (Genres) | In the Eye of a Thousand Pictures</title>
+        <link rel = "stylesheet" href = "../cssJS/bootstrap.min.css"/>
+        <link rel = "stylesheet" href = "../cssJS/thousandPictures.css"/>
+        <script src = "../cssJS/functions.js"></script>
+    </head>
+    <body>
+        
+        <div class = "container">
+            <!-- Header, Navigation -->
+            <div class = "row">
+                <div class = "pageHeader" id = "top"></div>
+                <div class = "navbar" id = "nav"></div>
+                <script>
+                    setHeader("top"); //sets element with id "top" with the page header html
+                    setNavbar("nav");//sets element with id "nav" with the navigation html 
+                </script>
+            </div>
+
+            <!-- "Body" -->
+            <div class = "row beige">
+                <!-- List of References in 2 rows -->
+              <div class = "col-sm-4">
+                <h3>-WHERE TO BEGIN (GENRES)-</h3>
+                <p>"Where do I start?" Like with different books or movies, video games fit into one or multiple genres. Let's begin by listing the main categories:</p>
+                <ul>
+                    <li>Action</li>
+                    <li>Action-Adventure</li>
+                    <li>Adventure</li>
+                    <li>Open-World / Sandbox</li>
+                    <li>Puzzle</li>
+                    <li>Role-Playing (RPG)</li>
+                    <li>Simulation</li>
+                    <li>Sports</li>
+                    <li>Strategy</li>
+                </ul><br>
+                <h3>&nbsp;</h3><img src = "../images/genres.png" alt = "A multi-venn-diagram detailing video game genres">
+                <p class = "imgCaption">A multi-venn-diagram image detailing video game genres</p>
+              </div>
+              
+              <div class = "col-sm-4">
+                <h3>-SUBGENRES-</h3>
+                <p>Many genres have subgenres, too. I'll list some important ones:</p>
+                
+                <div id = "adventure"></div>
+                <div id = "openWorld"></div>
+                <div id = "sim"></div>
+                <div id = "strategy"></div>
+
+              </div>
+
+              <!-- Second column of tables -->
+              <div class = "col-sm-4">
+                <h3>&nbsp;</h3><p><br>&nbsp;</p>
+
+                <div id = "action"></div>
+                <div id = "actionAdventure"></div>
+                
+                <div id = "puzzle"></div>
+                <div id = "rpg"></div>
+                <div id = "sports"></div>
+
+                <script>
+                    //list of subgenres and links to their descriptions
+                    action = [
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Platform_games", "Platform"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Shooter_games", "Shooter"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Fighting_games", "Fighting"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Beat_'em_up_games", "Beat 'em up"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Stealth_game", "Stealth"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Survival_games", "Survival"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Rhythm_games", "Rhythm"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Battle_Royale_games", "Battle Royale"]
+                    ];
+
+                    actionAdventure = [
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Metroidvania", "Metroidvania"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Survival_horror", "Survival Horror"]
+                    ];
+
+                    adventure = [
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Text_adventures", "Text Adventures"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Graphic_adventures", "Graphic Adventures"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Visual_novels", "Visual Novels"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Interactive_movie", "Interactive Movies"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Real-time_3D_adventures", "Real-Time 3D Adventures"]
+                    ];
+
+                    openWorld = [
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Creative", "Creative"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Open_world", "Open-World"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Sandbox", "Sandbox"]
+                    ];
+
+                    puzzle = [
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Breakout_clone_game", "Breakout Clone"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Logical_game", "Logical"],
+                        ["", "Physics"],
+                        ["", "Coding"],
+                        ["", "Trial-and-Error / Exploration"],
+                        ["", "Hidden Object"],
+                        ["", "Reveal the Picture"],
+                        ["", "Tile-Matching"],
+                        ["", "Traditional"],
+                        ["", "Puzzle-Platform"]
+                    ];
+
+                    rpg = [
+                        ["", "Action RPG"],
+                        ["", "MMORPG"],
+                        ["", "Roguelikes"],
+                        ["", "Tactical RPG"],
+                        ["", "Sandbox RPG"],
+                        ["", "JRPG"]
+                    ];
+
+                    sim = [
+                        ["", "Construction and Management"],
+                        ["", "Life"],
+                        ["", "Vehicle"]
+                    ];
+
+                    sports = [
+                        ["", "Racing"],
+                        ["", "Traditional Sports"],
+                        ["", "Non-Traditional Sports"],
+                        ["", "Sports-based Fighting"]
+                    ];
+
+                    strategy = [
+                        ["", "4X"],
+                        ["https://en.wikipedia.org/wiki/List_of_video_game_genres#Artillery_game", "Artillery"],
+                        ["", "Auto Battler"],
+                        ["", "Multiplayer Online Battle Arena (MOBA)"],
+                        ["", "Real-Time Strategy (RTS)"],
+                        ["", "Real-Time Tactics (RTT)"],
+                        ["", "Tower Defense"],
+                        ["", "Turn-Based Strategy (TBS)"],
+                        ["", "Turn-Based Tactics (TBT)"],
+                        ["", "War"],
+                        ["", "Grand Strategy War"]
+                    ];
+
+                    //arguments: html element ID, genre, list of subgenres
+                    setTable("action", "Action Games", action);
+                    setTable("adventure", "Adventure Games", adventure);
+                    setTable("actionAdventure", "Action-Adventure Games", actionAdventure);
+                    setTable("openWorld", "Open-World / Sandbox Games", openWorld);
+                    setTable("puzzle", "Puzzle Games", puzzle);
+                    setTable("rpg", "Role-Playing Games", rpg);
+                    setTable("sim", "Simulation Games", sim);
+                    setTable("sports", "Sports Games", sports);
+                    setTable("strategy", "Strategy Games", strategy);
+                </script>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class = "row pageFooter" id = "footer">
+                <script>
+                  setFooter("footer");
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

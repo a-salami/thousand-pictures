@@ -1,0 +1,285 @@
+@font-face{
+    font-family: 'Spectral';
+    /* src: url("https://fonts.google.com/specimen/Spectral?query=spectral"); */
+    src: url("../fonts/Spectral-Regular.ttf")
+}
+
+/* When the screen gets small enough to serve as a mobile screen */
+@media (max-width: 600px){ 
+    .pageHeader{
+        font-size: 15px;
+    }
+    .subheader{
+        font-size: 12px;
+    }
+
+    .pageFooter h4{
+        font-size: 14px;
+    }
+
+    .pageFooter h5{
+        font-size: 12px;
+    }
+
+    /* see if you can include a dropdown */
+    .navbar ul li{
+        display: block;
+    }
+}
+
+body{
+    font-family: 'Spectral', serif;
+}
+
+ul{
+    list-style-image: url('../images/fairyMarker.png');
+}
+
+.pageHeader{
+    padding: 20px;
+    background-color: rgb(24,164,148);
+}
+
+.pageHeader img{
+    border: 2px solid rgb(248,100,100);
+    width: 100px;
+}
+
+.pageHeader a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    padding: 20px 0px 20px 8px; /*top, right, left, bottom*/
+    background-color: rgb(24,164,148);
+}
+
+.navbar ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar li{
+    font-weight: 900;
+    margin: 9px;
+    padding: 4px;
+    list-style-type: none;
+    text-align: center;
+    display: inline;
+}
+
+.navbar li.one{
+    background-color: rgb(255,156,124);
+    border: 4px solid rgb(248,100,100);
+}
+
+.navbar li.two{
+    background-color: rgb(248,100,100);
+    border: 4px solid rgb(255,156,124);;
+}
+
+.navbar li:hover{
+    background-color: #328379;
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+}
+
+/* only works when hovering over the text itself */
+.navbar a:hover{
+    color: white;
+}
+
+div[class^="col-sm"]{
+    padding: 10px 5px 5px 15px; /*top, right, left, bottom*/
+}
+
+div[class^="col-sm"] img{
+    width: 90%;
+    border: 2px solid rgb(248,100,100);
+    border-radius: 3px;
+}
+
+div[class^="col-sm"] a{
+    text-decoration: none;
+    color: rgb(248,100,100);
+}
+
+div[class^="col-sm"] a:hover{
+    text-decoration: none;
+    color: rgb(255,156,124);
+}
+
+div[class^="col-sm"] a:visited{
+    text-decoration: none;
+    color: rgb(24,164,148);
+}
+
+div[class^="col-sm"] h5{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.imgCaption{
+    font-style: italic;
+    font-size: smaller;
+}
+
+.row{
+    background-color: rgba(215, 205, 192, 0.725);
+}
+
+.row.beige{
+    background-color: rgba(187, 172, 152, 0.289);
+}
+
+.pageFooter{
+    padding: 20px;
+    background-color: rgb(24,164,148);
+    color: white;
+}
+
+.pageFooter .col-sm-7{
+    text-align: right;
+}
+
+.pageFooter h4{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.pageFooter h5{
+    font-size: 14px;
+}
+
+.pageFooter .col-sm-7{ /* sets the text in this footer column to sit at the bottom end of the column because it looks cooler like that*/
+    padding-top: 5%;
+}
+
+.pageFooter .col-sm-7 h4 a{
+    text-decoration: none;
+    color: rgb(178, 237, 238);
+}
+
+.pageFooter .col-sm-7 h4 a:visited{
+    color: rgb(178, 237, 238);
+    text-decoration: underline;
+}
+
+.pageFooter .col-sm-7 h4 a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+fieldset{
+    border: 3px solid rgb(248,100,100);
+    width: fit-content;
+    padding: 5px;
+    display: inline-table;
+    background-color: rgba(187, 172, 152, 0.289);
+}
+
+legend{
+    background-color:rgb(255,156,124);
+    border: 3px solid rgb(248,100,100);
+    font-weight: bold;
+    padding: 3px;
+    width: fit-content;
+}
+
+textarea{
+    resize: none;
+}
+
+select{
+    height: 126px;
+    width: 210px;
+}
+
+table{
+    width: fit-content;
+    border: 4px solid rgb(24,164,148);
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 25px;
+}
+
+input[type="submit"], button{
+    border: 2px solid rgb(248,100,100);
+    background-color: rgb(178, 237, 238);
+    color: rgb(24,164,148);
+    font-size: small;
+    width: 185px;
+    text-align: center;
+}
+
+button{
+    width: 135px;
+}
+
+input[type="submit"]:hover, button:hover{
+    background-color: rgb(24,164,148);
+    color: rgb(178, 237, 238);
+    font-style: italic;
+}
+
+input[class="inputText"]{
+    width: 185px;
+    font-style: italic;
+    font-size: smaller;
+}
+
+tr, th, td{
+    border: 3px solid rgb(24,164,148);
+    padding: 2px;
+}
+
+th{
+    font-size: 18px;
+}
+
+td{
+    font-size: 16px;
+    width: 150px;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+.widerTable td{
+    width: fit-content;
+}
+
+hr{
+    width: 70%;
+}
+
+.error{
+    font-size: smaller;
+    color: rgb(248,100,100);
+}
+
+.ui-autocomplete{
+    background-color: #328379;
+    color: white;
+    border: 2px solid white;
+    width: fit-content;
+}
+
+.clickHover{
+    cursor: pointer;
+}
+
+.translation{
+    font-size: 16px;
+}
+
+.devSite{
+    display: none;
+}
