@@ -5,6 +5,9 @@ function dynamicRelativeReference(){
 
     var filename = location.pathname.split("thousand-pictures")[1]; //gets the full file path, splits it, keeps the split only after the word 'site'
 
+    // content = filename; //TESTING
+    document.getElementById("top").innerHTML += filename + " "; //testing
+
     //determine number of [/] present in the root folder filepath
     for (a in filename){ //step through each character in filename
         if (filename[a] == "/"){ 
