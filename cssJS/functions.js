@@ -3,7 +3,7 @@ function dynamicRelativeReference(){
     rootFolder = ""; //holds relative file path for any href
     numSlashes = 0; //counts the number of [../] necessary to get to 'site'
 
-    var filename = location.pathname.split("site")[1]; //gets the full file path, splits it, keeps the split only after the word 'site'
+    var filename = location.pathname.split("thousand-pictures")[1]; //gets the full file path, splits it, keeps the split only after the word 'site'
 
     //determine number of [/] present in the root folder filepath
     for (a in filename){ //step through each character in filename
@@ -35,12 +35,12 @@ function setHeader(id){
 function setNavbar(id){
     content = `<ul>
         <li class = "two"><a href = "` + dynamicRelativeReference() + `index.html">Home</a></li>
-        <li class = "one"><a href = "` + dynamicRelativeReference() + `project1/genres.html">Genres</a></li>
-        <li class = "two"><a href = "` + dynamicRelativeReference() + `project1/recommend-for-you.html">Recs for You</a></li>
-        <li class = "one"><a href = "` + dynamicRelativeReference() + `project1/recommend-for-me.html">Recs for Me?</a></li>
-        <li class = "two"><a href = "` + dynamicRelativeReference() + `project2/gallery.html">Gallery</a></li>
-        <li class = "one"><a href = "` + dynamicRelativeReference() + `project3/vgm.html">VGM</a></li>
-        <li class = "two"><a href = "` + dynamicRelativeReference() + `project1/reference.html">References</a></li>
+        <li class = "one"><a href = "` + dynamicRelativeReference() + `pages/genres.html">Genres</a></li>
+        <li class = "two"><a href = "` + dynamicRelativeReference() + `pages/recommend-for-you.html">Recs for You</a></li>
+        <li class = "one"><a href = "` + dynamicRelativeReference() + `pages/recommend-for-me.html">Recs for Me?</a></li>
+        <li class = "two"><a href = "` + dynamicRelativeReference() + `pages/gallery.html">Gallery</a></li>
+        <li class = "one"><a href = "` + dynamicRelativeReference() + `pages/vgm.html">VGM</a></li>
+        <li class = "two"><a href = "` + dynamicRelativeReference() + `pages/reference.html">References</a></li>
     </ul>`;
 
     document.getElementById(id).innerHTML += content;
